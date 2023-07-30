@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Brode
 {
-    internal class Program
+    internal class Player
     {
-        static void Main(string[] args)
+        public int health { get; set; }
+        static Player()
         {
-            StarGame game = new StarGame();
-            Console.ReadKey();
+            
         }
     }
 }
