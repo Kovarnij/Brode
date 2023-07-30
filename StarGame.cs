@@ -24,7 +24,7 @@ namespace Brode
             }
             else if (ans == "Да")
             {
-                Console.WriteLine("Win");
+                Console.WriteLine("(Голос) Вставай!");
             }
             else
             {
