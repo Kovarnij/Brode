@@ -17,6 +17,20 @@ namespace Brode
             //Thread.Sleep(5000);
             Console.Write("(Голос) Ты меня понимаешь? (Да/Нет)");
             string ans = Console.ReadLine();
+            if (ans == "Нет") 
+            {
+                Console.WriteLine("(Голос) Он притворяется, уже в который раз. Произвести стирание сознание.");
+                GameOver gameOver = new GameOver();
+            }
+            else if (ans == "Да")
+            {
+                Console.WriteLine("Win");
+            }
+            else
+            {
+                Console.WriteLine("(Голос) Он слишком глуп, чтобы ответить правильно. Произвести стирание сознание.");
+                GameOver gameOver = new GameOver();
+            }
         }
     }
 }
